@@ -1,0 +1,115 @@
+if the switch is turned to AUTO, and the light intensity is at or below 70% then the headlights should stay or turn immediately ON . the headlights should continue to stay ON in AUTO as long as the light intensity is not above 70% .
+%%%
+if the switch is turned to AUTO, and the light intensity is above 70% then the headlights should stay or turn immediately OFF . the headlights should continue to stay OFF in AUTO as long as the light intensity is not below 60% .
+%%%
+if the switch is in position AUTO, the headlights are OFF, and the light intensity falls below 60%, then the lights should turn ON if these condition lasts for 2s .
+%%%
+if the switch is in position AUTO, the headlights are ON, and the light intensity is above 70%, then the lights should turn OFF if these condition lasts for 3s .
+%%%
+When the user input on is received and the last status signal has been off, the monitor sends the command on to the station .
+%%%
+When the user input off is received and the last status signal has been on, the monitor sends the command off to the station . 
+%%%
+When the monitor receives for 5-time intervals no status signal , it sends a request (req) to the station .
+%%%
+When the station signals a status (on or off), the monitor has to confirm this (ack) within three-time intervals .
+%%%
+if ambient is less than target and timer is less than or equal to TIMEOUT then heater_command equals to ON .
+%%%
+if ambient is greater than or equal to target and timer less than or equal to TIMEOUT then
+<heater_command_equal_to_OFF> .
+%%%
+if timer greater than TIMEOUT then heater_command equal to ERROR
+timer equals to previous(timer) + 1
+%%%
+When object proximity sensor is activated then the automatic door controller shall open door .
+%%%
+when door opening limit sensor is activated then the automatic door controller shall stop door and start countdown timer .
+%%%
+when countdown timer expires then the automatic door controller shall close door  .
+%%%
+when door closing limit sensor is activated then the automatic door controller shall stop door  .
+%%%
+The customer enters a card and a personal code  .
+%%%
+SimpleMat checks the personal code  .
+%%%
+If the personal code is valid then SimpleMat accepts the card  .
+%%%
+If the personal code is not valid then SimpleMat rejects the card  .
+%%%
+while not liquid level 1 is reached, when start button is pressed, the liquid open mixer controller shall open the valve 0 until the emergency button is pressed  .
+%%%
+when liquid level 1 is reached, the liquid open mixer controller shall close valve 0  .
+%%%
+while not liquid level 2 is reached, when liquid level 1 is reached, the liquid open mixer controller shall open valve 1until emergency button is pressed  .
+%%%
+when liquid level 2 is reached, the liquid open mixer controller shall close valve 1  .
+%%%
+when liquid level 2 is reached, the 60 second timer shall start  .
+%%%
+when liquid level 2 is reached, the liquid open mixer controller shall start stirring motor until 60 second timer expires or emergency button is pressed  .
+%%%
+when 60 second timer expires, the 120 second timer shall start  .
+%%%
+when 60 second timer expires, the liquid open mixer controller shall open valve 2 until 120 second timer expires or emergency button is pressed  .
+%%%
+when emergency button is pressed, the liquid open mixer controller shall close valve 0  .
+%%%
+when emergency button is pressed, the liquid open mixer controller shall close valve 1  .
+%%%
+when emergency button is pressed, the liquid open mixer controller shall close valve 2
+when emergency button is pressed, the liquid open mixer controller shall stop stirring motor  .
+%%%
+The control system shall prevent engine overspeed  .
+%%%
+When continuous ignition is commanded by the aircraft, the control system shall switch on continuous ignition  .
+%%%
+If the computed airspeed fault flag is set, then the control system shall use modelled airspeed  .
+%%%
+While the aircraft is in-flight, the control system shall maintain engine fuel flow above XX lbs/sec  .
+%%%
+During thrust reverser door translation, the control system shall limit thrust to minimum idle  .
+%%%
+When the control system includes an overspeed protection function, the control system shall test the availability of the overspeed protection function before aircraft dispatch  .
+%%%
+While the aircraft is on-ground, when reverse thrust is commanded, the control system shall  enable deployment of the thrust reverser  .
+%%%
+While the aircraft is in-flight, if reverse thrust is commanded, then the control system shall inhibit thrust reverser deployment  .
+%%%
+When selecting idle setting, if aircraft data is unavailable, then the control system shall select Approach Idle  .
+%%%
+The Engine Control System shall not cause unacceptable thrust or power oscillations  .
+%%%
+When the Engine Control System changes operational mode, the Engine Control System shall maintain the engine within approved operational limits  .
+%%%
+If a single Failure leads to deficient Aircraft-Supplied Data, then the Engine Control System shall not cause a Hazardous Engine Effect  .
+%%%
+While in a Full-Up Configuration, the Engine Control System shall be Essentially Single Fault Tolerant with respect to LOTC/LOPC event  .
+%%%
+Where over-speed protection is provided through hydromechanical means, the frequency of Engine Control System inspection and maintenance periods shall be consistent with the required availability of the feature  .
+%%%
+If the driver up or passenger up switch is pressed then the window has to start moving up in less than 50 ms  .
+%%%
+If an obstacle is detected at least for 50 ms, the window down signal has to be activated for minimum time frame of 1 sec  .
+%%%
+while serve sea conditions, when radar is sighting, the weapon operator shall fire a missile within 3 seconds  .
+%%%
+the communication system shall sustain telephone contact with 10 callers while the absence of external power
+the coffee machine shall produce hot drink every 10 seconds  .
+%%%
+the traffic lights of the main road and of the side road must not display a green signal at the same time  .
+%%%
+after the train has passed the railroad crossing, the gates can be opened  .
+%%%
+If a defect is detected at a certain valve, the software control system has to be switched off for 2 seconds  .
+%%% after the software control system is switched off, the redundant pneumatic control has to be switched on  .
+%%%
+The safeguard of a level crossing is terminated, after the railroad crossing has been completely vacated if the train had passed  .
+%%%
+The inflow must be opened until the temperature sensor has relayed the value 400  .
+%%%
+after the temperature sensor has relayed the value 350, the inflow is opened as long as the level of the tank is less than the minimum value  .
+%%%
+The gates must be in the closed state for 6 seconds before the railroad crossing is Safeguarded  .
+%%%
